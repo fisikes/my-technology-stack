@@ -1,0 +1,3 @@
+rootProject.name = 'my-technology-stack'
+include 'common-web-app'
+
