@@ -8,7 +8,7 @@ public class EnumTest {
   @Test
   public void test(){
     System.out.println("电子档案存入数据库的状态值: "+ArchTypeEnum.ELECTRONIC_RECORD.getIndex());
+    System.out.println("会议纪要 状态值: "+ArchTypeEnum.MEETING_MINUTES.getIndex());
   }
-
 
 }
