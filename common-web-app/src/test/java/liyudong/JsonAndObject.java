@@ -2,11 +2,10 @@ package liyudong;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import java.util.List;
 import liyudong.data.Song;
 import liyudong.data.SongData;
 import org.junit.Test;
-
-import java.util.List;
 
 public class JsonAndObject {
 
