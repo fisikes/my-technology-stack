@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>添加song</h1>
+<form th:action="@{/song/add}" method="post">
+    <input name="song" placeholder="song"/>
+    <input name="singer" placeholder="singer"/>
+    <input name="token" th:value="${token}"/>
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
