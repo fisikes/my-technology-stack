@@ -11,4 +11,8 @@ public class EnumTest {
     System.out.println("会议纪要 状态值: "+ArchTypeEnum.MEETING_MINUTES.getIndex());
   }
 
+  @Test
+  public void test_01(){
+     //ArchTypeEnum(1);
+  }
 }
