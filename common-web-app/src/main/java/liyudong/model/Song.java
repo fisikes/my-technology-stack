@@ -1,31 +1,16 @@
 package liyudong.model;
 
+import javax.validation.constraints.NotNull;
+import lombok.Data;
+
+@Data
 public class Song {
 
+  @NotNull
   private String song;
+  @NotNull
   private String singer;
+  @NotNull
+  private Integer year;
 
-  @Override
-  public String toString() {
-    return "Song{" +
-            "song='" + song + '\'' +
-            ", singer='" + singer + '\'' +
-            '}';
-  }
-
-  public String getSong() {
-    return song;
-  }
-
-  public void setSong(String song) {
-    this.song = song;
-  }
-
-  public String getSinger() {
-    return singer;
-  }
-
-  public void setSinger(String singer) {
-    this.singer = singer;
-  }
 }

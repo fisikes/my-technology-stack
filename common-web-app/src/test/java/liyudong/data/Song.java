@@ -20,6 +20,14 @@ public class Song {
     return song;
   }
 
+  public void setSinger(String singer) {
+    this.singer = singer;
+  }
+
+  public void setSong(String song) {
+    this.song = song;
+  }
+
   @Override
   public String toString() {
     return "Song{" +

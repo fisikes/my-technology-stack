@@ -1,4 +1,4 @@
-package liyudong.aop;
+package liyudong.controller.aop;
 
 import java.lang.annotation.*;
 

@@ -1,4 +1,4 @@
-package liyudong.java;
+package liyudong.logger;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

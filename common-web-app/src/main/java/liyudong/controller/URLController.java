@@ -1,6 +1,6 @@
 package liyudong.controller;
 
-import liyudong.aop.Token;
+import liyudong.controller.aop.Token;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

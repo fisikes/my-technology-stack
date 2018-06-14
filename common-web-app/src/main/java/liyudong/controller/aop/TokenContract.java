@@ -1,4 +1,4 @@
-package liyudong.aop;
+package liyudong.controller.aop;
 
 import liyudong.exception.FormRepeatException;
 import org.aspectj.lang.JoinPoint;
