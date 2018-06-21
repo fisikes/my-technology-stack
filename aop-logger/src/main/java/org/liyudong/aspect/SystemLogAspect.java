@@ -1,3 +1,4 @@
+/*
 package org.liyudong.aspect;
 
 import java.lang.reflect.Method;
@@ -24,11 +25,13 @@ import org.springframework.core.NamedThreadLocal;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Component;
 
+*/
 /**
  * 系统日志切点类
  * @author linrx
  *
- */
+ *//*
+
 @Aspect
 @Component
 public class SystemLogAspect {
@@ -50,28 +53,38 @@ public class SystemLogAspect {
 	@Autowired
 	private LogService logService;
 
-	/**
+	*/
+/**
 	 * Service层切点 
-	 */
+	 *//*
+
+*/
 /*	@Pointcut("@annotation(com.myron.ims.annotation.SystemServiceLog)")
-	public void serviceAspect(){}*/
+	public void serviceAspect(){}*//*
+
 	
-	/**
+	*/
+/**
 	 * Controller层切点 注解拦截
-	 */
+	 *//*
+
 	@Pointcut("@annotation(com.myron.ims.annotation.SystemControllerLog)")
 	public void controllerAspect(){}
 	
-	/**
+	*/
+/**
 	 * 方法规则拦截
-	 */
+	 *//*
+
 	@Pointcut("execution(* com.myron.ims.controller.*.*(..))")
 	public void controllerPointerCut(){}
-	/**
+	*/
+/**
 	 * 前置通知 用于拦截Controller层记录用户的操作的开始时间
 	 * @param joinPoint 切点
 	 * @throws InterruptedException
-	 */
+	 *//*
+
 	@Before("controllerAspect()")
 	public void doBefore(JoinPoint joinPoint) throws InterruptedException {
 		Date beginTime=new Date();
@@ -89,10 +102,12 @@ public class SystemLogAspect {
 
 	}
 	
-	/**
+	*/
+/**
 	 * 后置通知 用于拦截Controller层记录用户的操作
 	 * @param joinPoint 切点
-	 */
+	 *//*
+
 	@SuppressWarnings("unchecked")
 	@After("controllerAspect()")
 	public void doAfter(JoinPoint joinPoint) {
@@ -159,11 +174,13 @@ public class SystemLogAspect {
  
 	}
 	
-	/**
+	*/
+/**
 	 *  异常通知 
 	 * @param joinPoint
 	 * @param e
-	 */
+	 *//*
+
 	@AfterThrowing(pointcut = "controllerAspect()", throwing = "e")
 	public  void doAfterThrowing(JoinPoint joinPoint, Throwable e) {
 		Log log = logThreadLocal.get();
@@ -174,12 +191,14 @@ public class SystemLogAspect {
 		}
 	}
 
-	/**
+	*/
+/**
 	 * 获取注解中对方法的描述信息 用于Controller层注解
 	 * 
 	 * @param joinPoint 切点
 	 * @return 方法描述
-	 */
+	 *//*
+
 	public static String getControllerMethodDescription2(JoinPoint joinPoint) {
 		MethodSignature signature = (MethodSignature) joinPoint.getSignature();
 		Method method = signature.getMethod();
@@ -189,12 +208,14 @@ public class SystemLogAspect {
 		return discription;
 	}
 
-	/**
+	*/
+/**
 	 * 保存日志线程
 	 * 
 	 * @author lin.r.x
 	 *
-	 */
+	 *//*
+
 	private static class SaveLogThread implements Runnable {
 		private Log log;
 		private LogService logService;
@@ -210,12 +231,14 @@ public class SystemLogAspect {
 		}
 	}
 
-	/**
+	*/
+/**
 	 * 日志更新线程
 	 * 
 	 * @author lin.r.x
 	 *
-	 */
+	 *//*
+
 	private static class UpdateLogThread extends Thread {
 		private Log log;
 		private LogService logService;
@@ -228,7 +251,10 @@ public class SystemLogAspect {
 
 		@Override
 		public void run() {
-			this.logService.updateLog(log);
+	*/
+/*		this.logService.updateLog(log);*//*
+
 		}
 	}
 }
+*/

@@ -2,4 +2,5 @@ rootProject.name = 'my-technology-stack'
 include 'common-web-app'
 include 'mybatis-demo'
 include 'aop-logger'
+include 'redis-demo'
 
