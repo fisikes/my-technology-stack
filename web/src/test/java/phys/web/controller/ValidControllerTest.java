@@ -3,7 +3,6 @@ package phys.web.controller;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import org.hamcrest.core.Is;
